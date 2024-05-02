@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <title>Advanced CSS - Assignment 1</title>
     <style>
-        a [href*="google.com"] {
+
+        a:link[href*="google.com"] {
+            color: green;
+        }
+        a:visited[href*="google.com"] {
             color: green;
         }
 
-        a:visited [href$=".eu/"] {
+        a:visited[href*="link-group"] {
+            color: red;
+        }
+
+        a:link[href*="link-group"] {
             color: red;
         }
 
